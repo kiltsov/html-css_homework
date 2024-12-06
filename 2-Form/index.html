@@ -4,43 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!--Main Wrapper-->
     <main>
       <section>
-        <div>
+        <div class="container">
           <h1>Регистрация</h1>
           <div>
             <p>Уже есть аккаунт?</p>
             <a href="#">Войти</a>
           </div>
-        </div>
-        <form action="#" method="get">
-          <div>
-            <input
-              type="text"
-              placeholder="Название компании"
-              id="company"
-              name="company"
-            />
-          </div>
-          <div>
-            <input type="text" placeholder="Имя" name="name" />
-            <input type="text" placeholder="Фамилия" name="surname" />
-          </div>
-          <div>
-            <input type="email" placeholder="E-mail" id="email" name="email" />
-          </div>
-          <button type="submit">Зарегистрироваться</button>
+          <form action="#" method="get">
+            <div>
+              <input
+                type="text"
+                placeholder="Название компании"
+                id="company"
+                name="company"
+              />
+            </div>
+            <div>
+              <input type="text" placeholder="Имя" name="name" />
+              <input type="text" placeholder="Фамилия" name="surname" />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="E-mail"
+                id="email"
+                name="email"
+              />
+            </div>
+            <button type="submit">Зарегистрироваться</button>
 
-          <div>
-            <label for="privacy">
-              <span>Я прочитал и принимаю</span>
-              <a href="#">Условия использования</a>
-            </label>
-            <input type="checkbox" name="privacy" id="privacy" />
-          </div>
-        </form>
+            <div>
+              <label for="privacy">
+                <span>Я прочитал и принимаю</span>
+                <a href="#">Условия использования</a>
+              </label>
+              <input type="checkbox" name="privacy" id="privacy" />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
   </body>

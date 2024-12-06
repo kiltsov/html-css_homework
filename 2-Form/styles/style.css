@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+}
+
+main {
+
+}
+
+section {
+display: block;
+background-color: #F39494;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+}
+
+form {
+background-color: #FFFEFE;
+padding-left: 95px;
+padding-top: 72px;
+padding-right: 95px;
+padding-bottom: 72px;
+}
+
+h1 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.36;
+color: #333333;
+}
+
+p {
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.38;
+color: #666666;
+}

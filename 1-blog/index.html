@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мой блог</title>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="navbar_brand">
-        <div class="logo">B</div>
-        <p>Мой блог</p>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#">HTML и CSS</a></li>
-          <li><a href="#">Frontend</a></li>
-          <li><a href="">Backend</a></li>
-        </ul>
-        <form action="https://www.youtube.com/results" method="get">
-          <input
-            type="text"
-            placeholder="Поиск"
-            id="query"
-            name="search_query"
-          />
-        </form>
-      </nav>
-    </header>
-    <!-- Main-->
-    <main>
-      <div class="section_blog">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мой блог</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="#" class="navbar_brand">
+      <div class="logo">B</div>
+      <p>Мой блог</p>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">HTML и CSS</a></li>
+        <li><a href="#">Frontend</a></li>
+        <li><a href="#">Backend</a></li>
+      </ul>
+      <form action="https://www.youtube.com/results" method="get">
+        <input type="text" placeholder="Поиск" id="query" name="search_query" />
+      </form>
+    </nav>
+  </header>
+  <!-- Main-->
+  <main>
+    <section class="section_blog">
+      <div class="container">
         <div class="blog_hero-content">
           <div class="blog_hero-caption">
             <p>FRONTEND</p>
@@ -40,13 +39,10 @@
           <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
 
           <div class="blog_hero-about">
-            <img
-              src="./images/Vasieva.png"
-              alt="Разработчик Наталья Васильева"
-            />
+            <img class="about_image" src="./images/Vasieva.png" alt="Разработчик Наталья Васильева" />
             <div class="hero-about_content">
               <p>Наталья Васильева</p>
-              <p>Разработчик</p>
+              <p class="text-body-14">Разработчик</p>
             </div>
           </div>
         </div>
@@ -56,7 +52,7 @@
         </div>
 
         <div class="blog_content">
-          <p>
+          <p class="paragraph-big">
             Теория цвета — это особенности эмоционального восприятия человеком
             тех или иных цветовых решений. Цвета и различные их комбинации
             влияют на психику человека, а значит, во многом определяют его
@@ -81,11 +77,14 @@
             категории продукта) дают положительную или отрицательную оценку
             товару, основываясь только на его цвете.
           </p>
+        </div>
       </div>
-    </main>
-    <!-- Footer-->
-    <footer class="footer_component">
-      <p>Все права защищены &#169; 2024</p>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <!-- Footer-->
+  <footer class="footer_component">
+    <p>Все права защищены &#169; 2024</p>
+  </footer>
+</body>
+
 </html>
