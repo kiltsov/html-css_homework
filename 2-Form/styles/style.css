@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #666666;
+}
+
+section {
+    display: block;
+    background-color: #F39494;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.36;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form_component {
+    /* width: 582px; */
+    background-color: #FFFEFE;
+    padding: 72px 95px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.reg_caption {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto 50px;
+    justify-content: center;
+}
+
+input {
+    padding: 9px 12px;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+}
+
+#company {
+    margin-bottom: 22px;
+}
+
+.inputs_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.inputs_wrapper > input {
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+#email {
+    margin-bottom: 22px;
+    background-color: #F5F5F5;
+}
+
+#button_submit {
+    font-size: 18px;
+    color: #FFFFFF;
+    height: 44px;
+    width: 100%;
+    padding: 9px auto;
+    background-color: #089FE0;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+form input #company {}
