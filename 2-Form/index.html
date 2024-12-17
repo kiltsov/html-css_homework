@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Form</title>
   <link rel="stylesheet" href="./styles/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,23 +23,26 @@
           <h1>Регистрация</h1>
           <div class="reg_caption">
             <p>Уже есть аккаунт?</p>
-            <a href="#">Войти</a>
+            <a class="text-link-big" href="#">Войти</a>
           </div>
 
           <form action="#" method="get">
             <input type="text" placeholder="Название компании" id="company" name="company" />
             <div class="inputs_wrapper">
-              <input type="text" placeholder="Имя" name="name" />
-              <input type="text" placeholder="Фамилия" name="surname" />
+              <input type="text" placeholder="Имя" name="name" id="name" />
+              <input type="text" placeholder="Фамилия" name="surname" id="surname" />
             </div>
             <input type="email" placeholder="E-mail" id="email" name="email" />
-            <button type="submit" id="button_submit">Зарегистрироваться</button>
 
-            <div>
-              <input type="checkbox" name="privacy" id="privacy" />
-              <label for="privacy">
+            <div class="submit_wrapper">
+              <img class="submit-arrow" src="./assets/arrow.svg" alt="cтрелочка ">
+              <button type="submit" id="button_submit">Зарегистрироваться</button>
+            </div>
+            <div class="checkbox_wrapper">
+              <input class="checkbox" type="checkbox" name="privacy" id="privacy" />
+              <label style="color: #666666;" for="privacy">
                 <span>Я прочитал и принимаю</span>
-                <a href="#">Условия использования</a>
+                <a class="text-link-small" href="#">Условия использования</a>
               </label>
 
             </div>
