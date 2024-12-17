@@ -96,12 +96,18 @@ li > a:hover {
 }
 
 /* Input */
+input:focus-visible {
+    outline: none;
+    outline-offset: 0px;
+}
+
 .search_input {
     position: relative;
     display: inline-block;
 }
 
 .search_input > input {
+    color: white;
     background-color: #283241;
     border-radius: 100vw;
     border-style: none;
