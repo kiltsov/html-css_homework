@@ -1,0 +1,612 @@
+/************** Section Hero **************/
+
+.section_hero {
+    background-color: var(--color-blue);
+    padding: 11.625rem 0 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__component {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.hero__content-wrapper {
+    padding-top: 1.0625rem;
+}
+
+.hero__image {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 64.9375rem;
+    height: 39.1875rem;
+    z-index: 2;
+    margin-right: -6.4375rem;
+}
+
+.hero__heading {
+    color: var(--color-white);
+    max-width: 32.1875rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 3;
+    gap: 4rem;
+}
+
+.hero-card {
+    display: flex;
+    gap: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--color-black);
+}
+
+.hero__line {
+    width: 200vw;
+    height: 37.5rem;
+    position: absolute;
+    z-index: 1;
+    left: -50vw;
+    bottom: -12.625rem;
+    background-color: var(--color-white);
+    transform: rotateZ(-7deg);
+}
+
+.hero__logos-wrapper {
+    max-width: 20.8125rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;  
+}
+
+.wildberries-icon {
+    width: 12.875rem;
+    height: 1.5rem;
+}
+
+.ozon-icon {
+    width: 6.875rem;
+    height: 1.5rem;
+}
+
+.market-icon {
+    width: 9.5625rem;
+    height: 2.1875rem;
+}
+
+.ali-icon {
+    width: 9.6875rem;
+    height: 2.3125rem;
+}
+
+/************** Section Features **************/
+
+.feature__grid {
+    padding: 5rem 0 5rem 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 4rem;
+    border-top: 1px solid var(--color-border-feature);
+}
+
+.feature__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature__image {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.text-style-body-feature {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: var(--color-text-grey);
+}
+
+.feature__content.is-1 {
+    padding-left: 7.375rem;
+    /* max-width: 30.125rem; */
+}
+
+.feature__content.is-2 {
+    padding-right: 7.375rem;
+    max-width: 42.875rem
+}
+
+.feature__content.is-3 {
+    padding-left: 7.375rem;
+    max-width: 38.875rem
+}
+
+.feature__content.is-4 {
+    padding-right: 7.375rem;
+    /* max-width: 30.125rem; */
+}
+
+.feature__image.is-1 {
+    width: 45.5625rem;
+    height: 27.875rem;
+}
+
+.feature__image.is-2 {
+    width: 40.25rem;
+    height: 27.75rem;
+}
+
+.feature__image.is-3 {
+    width: 40.0625rem;
+    height: 26rem;
+}
+
+.feature__image-wrapper {
+    width: 40.1875rem;
+    position: relative;
+}
+
+.feature__image.is-4 {
+    width: 28.8125rem;
+    height: 23.25rem;
+}
+
+.image-4-label {
+    display: flex;
+    gap: 2.5rem;
+    padding: 1.625rem 2.375rem;
+    position: absolute;
+    top: 6.5625rem;
+    right: 0;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    z-index: 1;
+    color: #FF6536;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 140%;
+    box-shadow: 0px 0px 32px rgba(78, 93, 124, 0.32);
+}
+
+.cut-angle {
+    width: 5.9375rem;
+    height: 3rem;
+    position: absolute;
+    left: 25%;
+    bottom: -2rem;
+    z-index: -1;
+
+}
+
+
+
+/************** Section Econom **************/
+
+.section_econom {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    background: var(--color-blue);
+}
+
+.econom__component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.econom__head-wrapper {
+    margin-bottom: 4rem;
+    max-width: 72.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.econom__slider {
+    width: 72.25rem;
+    height: 40rem;
+    border-radius: .75rem;
+    overflow: hidden;
+    margin: 0 auto 4rem auto;
+}
+
+.econom__grid {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    justify-content: center;
+}
+
+.econom-card__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--color-white)
+}
+
+.econom-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-op-80);
+}
+
+/************** Section Tips **************/
+
+.section_tips {
+    margin-top: 7.5rem;
+}
+
+.tips__component {
+    padding-bottom: 5rem;
+    border-bottom: 1px solid var(--color-border-feature);
+}
+
+.tips__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.tip-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tip-card__image {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tip-card__heading {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+.tip-card__caption {
+    font-weight: 500;
+    font-size: 1.0625rem;
+    color: var(--color-text-grey);
+}
+
+/************** Section Mobile **************/
+
+.section_mobile {
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
+}
+
+.mobile__component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-heading {
+    margin-bottom: 1.5rem;
+}
+
+.mobile-caption {
+    margin-bottom: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 140%;
+    text-align: center;
+    color: var(--color-text-grey)
+}
+
+.mobile__image {
+    margin: 0 auto;
+    width: 70.5rem;
+    height: 46.8125rem;
+}
+
+/************** Section Support **************/
+
+.support__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 0 5.9375rem;
+    gap: 4.625rem;
+}
+
+.support__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.support-heading {
+    margin-bottom: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 120%;
+}
+
+.support-caption {
+    margin-bottom: 2.5rem;
+    max-width: 25.6875rem;
+}
+
+.support__image {
+    width: 38.9375rem;
+    height: 100%;
+}
+
+.support__links-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.support-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.support-link:hover {
+    opacity: 0.5;
+}
+
+/************** Section Tarifs **************/
+
+.section_tarifs {
+    padding: 5rem 0;
+}
+
+.tarif__component {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tarif__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+}
+
+.tarif-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5.8125rem 2.5rem 3rem;
+    background-color: var(--color-white);
+    width: 23.0625rem;
+    height: 31.6875rem;
+    box-shadow: 0px 0px 32px rgba(78, 93, 124, 0.16);
+    border-radius: 0.5rem;
+}
+
+.tarif-card__heading-wrapper {
+    margin-bottom: auto;
+}
+
+.tarif-card-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+}
+
+.tarif-card-caption {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 140%;
+    opacity: 0.5;
+}
+
+.tarif-card__content {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.tarif-card__row {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 3.25rem;
+}
+
+.tarif-card__row:nth-child(2n) {
+    border-top: 1px solid var(--color-border-feature);
+    border-bottom: 1px solid var(--color-border-feature);
+}
+
+.row-heading {
+    width: 10.5rem;
+    margin-right: 1.25rem;
+}
+
+.tarif-card_active {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.tarif-card__label {
+    padding: 0.25rem 1rem;
+    background-color: var(--color-green-label);
+    border-radius: .5rem;
+    color: var(--color-white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 140%;
+    position: absolute;
+    top: 3rem;
+    left: 2.5rem;
+    z-index: 3;
+}
+
+.tarif-card__price {
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+}
+
+.price_active {
+    background-color: #FFC736;
+    margin-left: -1rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    line-height: 120%;
+    color: var(--color-white);
+}
+
+/************** Section Feedback **************/
+
+.section_feedback {
+    padding: 0 0 5rem 0;
+}
+
+.feedback__component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-swiper {
+    position: relative;
+    height: 27.375rem;
+    max-width: 72.375rem;
+}
+
+.feedback-wrapper {
+    height: 100%;
+}
+
+.feedback-slide {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.feedback-slide__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 10%;
+}
+
+.feedback-slide__image {
+    width: 50%;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.feedback-slide-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 140%;
+    margin-bottom: 2.5rem;
+}
+
+.feedback-slide-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 140%;
+}
+
+.feedback-slide-caption {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    line-height: 140%;
+}
+
+.swiper-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.swiper-button:hover > .swiper-arrow {
+    opacity: 1;
+}
+
+.swiper-arrow {
+    padding: 0.625rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100vw;
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    opacity: 0.5;
+}
+
+.swiper-button.is-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.swiper-button.is-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.swiper-pagination {
+    display: none;
+}
