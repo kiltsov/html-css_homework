@@ -201,4 +201,17 @@ p {
         width: 3rem;
         height: 3rem;
     }
+
+    /************** Other **************/
+
+    .section-heading {
+        margin-bottom: 2rem;
+        align-items: flex-start;
+    }
+
+    /* Параграф */
+    .section-heading p {
+        text-align: start;
+    }
+    
 }
