@@ -1,4 +1,7 @@
-/* Global Styles */
+/*********************************************/
+/************** Global Styles ****************/
+/*********************************************/
+
 :root {
     /* Base color*/
     --color-white: #FFFFFF;
@@ -15,25 +18,20 @@
     --color-border-feature: #F1F2F5;
 }
 
-html { font-size: calc(0.000027758501041086348rem + 0.8333102012491325vw);
-
+html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -o-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
-@media screen and (max-width:1920px) { html { font-size: calc(0.000027758501040975325rem + 0.8333102012491325vw); } }
-@media screen and (max-width:479px) { html { font-size: calc(0.00007512019230748734rem + 4.266346153846155vw); } }
-@media screen and (max-width:375px) { html { font-size: calc(-0.00267379679144385rem + 4.27807486631016vw); } }
-
-
 body {
-    margin: 0;
+    max-width: 1920px; 
+    margin: 0 auto;
     font-family: "Inter", serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.2;
     background-color: var(--color-white);
     color: var(--color-black);
@@ -41,6 +39,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+main {
+    display: block;
 }
 
 .section {
@@ -55,7 +57,7 @@ body {
 .container {
     display: block;
     width: 100%;
-    max-width: 100%;
+    max-width: 1392px; /* контейнер ограничен */
     margin: auto auto;
 }
 
@@ -87,10 +89,32 @@ img {
 }
 
 /*********************************************/
-/************** Mobile Adaptive **************/
+/************** Adaptives ********************/
 /*********************************************/
 
-@media (max-width: 479px) {
+/************** 1920px ***********************/
+
+@media (max-width: 1920px) {
+
+    .padding-global {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/************** 1440px ***********************/
+
+@media (max-width: 1440px) {
+
+    .padding-global {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/************** 375px ************************/
+
+@media (max-width: 375px) {
 
     .padding-global {
         padding-left: 1.5rem;

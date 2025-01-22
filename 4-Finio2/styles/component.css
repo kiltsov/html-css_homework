@@ -60,7 +60,7 @@ p {
     border-radius: 100vw;
     text-wrap: nowrap;
     cursor: pointer;
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.25s ease-out;
     background-color: none;
 }
 
@@ -74,6 +74,9 @@ p {
 .button_white:hover {
     background-color: var(--color-black);
     color: var(--color-white);
+    box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+    position: relative;
+    top: -3px;
 }
 
 /* Button Blue */
@@ -86,6 +89,9 @@ p {
 .button_blue:hover {
     background-color: var(--color-black);
     color: var(--color-white);
+    box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+    position: relative;
+    top: -3px;
 }
 
 
@@ -140,10 +146,16 @@ p {
 }
 
 /*********************************************/
-/************** Mobile Adaptive **************/
+/************** Adaptives ********************/
 /*********************************************/
 
-@media (max-width: 479px) {
+@media (max-width: 991px) {
+    .section-heading p {
+        text-align: start;
+    }
+}
+
+@media (max-width: 375px) {
 
     h1 {
         margin: 0 0;
@@ -153,7 +165,7 @@ p {
         font-size: 2rem;
         line-height: 1.2;
     }
-    
+
     h2 {
         margin: 0 0;
         font-family: 'Inter';
@@ -170,17 +182,17 @@ p {
 
     p {
         margin: 0 0;
-        font-size: 1rem ;
+        font-size: 1rem;
         line-height: 1.5;
     }
-    
+
     .heading-style-h3 {
         font-style: normal;
         font-weight: 600;
         font-size: 2rem;
         line-height: 1.2;
     }
-    
+
     .text-style-p-18 {
         font-style: normal;
         font-weight: 500;
@@ -189,7 +201,7 @@ p {
     }
 
     /************** Buttons **************/
-    
+
     .button {
         padding: 0.75rem 0;
         width: 100%;
@@ -213,5 +225,5 @@ p {
     .section-heading p {
         text-align: start;
     }
-    
+
 }

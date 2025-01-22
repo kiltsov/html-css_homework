@@ -1,0 +1,96 @@
+/*********************************************/
+/************** Section Mobile ***************/
+/*********************************************/
+.section_mobile {
+	display: block;
+	padding-top: 5rem;
+	padding-bottom: 7.5rem;
+}
+
+.mobile__component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mobile-heading {
+	margin-bottom: 1.5rem;
+}
+
+.mobile-caption {
+	margin-bottom: 2.5rem;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.0625rem;
+	line-height: 140%;
+	text-align: center;
+	color: var(--color-text-grey)
+}
+
+.mobile__image {
+	margin: 0 auto;
+	width: 70.5rem;
+	height: 46.8125rem;
+}
+
+/*********************************************/
+/************** Adaptives ********************/
+/*********************************************/
+
+/************** 1280px ***********************/
+@media (max-width: 1280px) {
+	.mobile__image {
+		margin: 0 auto;
+		width: 90vw;
+		height: 60vw;
+	}
+}
+
+/************** 991px ***********************/
+@media (max-width: 991px) {
+	.mobile__component {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.mobile-caption {
+		max-width: 23.75rem;
+		text-align: start;
+	}
+}
+
+@media (max-width: 375px) {
+	.section_mobile {
+		padding-top: 3rem;
+		padding-bottom: 4rem;
+		overflow: hidden;
+	}
+
+	.mobile__component {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.mobile-heading {
+		max-width: 13.4375rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.mobile-caption {
+		margin-bottom: 2.5rem;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.0625rem;
+		line-height: 140%;
+		text-align: left;
+		color: var(--color-text-grey)
+	}
+
+	.mobile__image {
+		margin: 0 auto;
+		width: 42.3125rem;
+		height: 28.75rem;
+	}
+}

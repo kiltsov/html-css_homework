@@ -1,0 +1,116 @@
+/*********************************************/
+/************** Section Tips *****************/
+/*********************************************/
+.section_tips {
+	display: block;
+	margin-top: 7.5rem;
+}
+
+.tips__component {
+	padding-bottom: 5rem;
+	border-bottom: 1px solid var(--color-border-feature);
+}
+
+.tips__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	justify-content: space-between;
+	gap: 4rem;
+}
+
+.tip-card {
+	width: 25rem;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.tip-card__image {
+	width: 5rem;
+	height: 5rem;
+	margin-bottom: 1.5rem;
+}
+
+.tip-card__heading {
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 1.2;
+	margin-bottom: 1.25rem;
+}
+
+.tip-card__caption {
+	font-weight: 500;
+	font-size: 1.0625rem;
+	color: var(--color-text-grey);
+}
+
+/*********************************************/
+/************** Adaptives ********************/
+/*********************************************/
+
+/************** 1440px ***********************/
+@media (max-width: 1440px) {
+	.tips__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		justify-content: center;
+		justify-items: center;
+		gap: 2rem;
+	}
+
+	.tip-card {
+		width: 25rem;
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		text-align: center;
+		align-items: center;
+	}
+}
+
+/************** 1280px ***********************/
+
+
+/************** 375px ***********************/
+@media (max-width: 375px) {
+	.section_tips {
+		margin-top: 4rem;
+	}
+
+	.tips__component {
+		padding-bottom: 3rem;
+		border-bottom: 1px solid var(--color-border-feature);
+	}
+
+	.tips__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	.tip-card {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.tip-card__image {
+		width: 4rem;
+		height: 4rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.tip-card__heading {
+		font-weight: 600;
+		font-size: 1.5rem;
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+	}
+
+	.tip-card__caption {
+		font-weight: 500;
+		font-size: 1.0625rem;
+		color: var(--color-text-grey);
+	}
+}
