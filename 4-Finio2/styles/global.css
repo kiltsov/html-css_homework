@@ -1,0 +1,123 @@
+/*********************************************/
+/************** Global Styles ****************/
+/*********************************************/
+
+:root {
+    /* Base color*/
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-blue: #357EFE;
+    --color-dark-grey: #1A1D25; /* Footer */
+    --color-green-label: #1ABC9C;
+
+    /* Text color*/
+    --color-text-grey: #A6AEBD;
+    --color-text-op-50: #8C8E92;
+    --color-text-op-70: #BABBBE;
+    --color-text-op-80: #D7E5FF;
+    --color-border-feature: #F1F2F5;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    max-width: 1920px; 
+    margin: 0 auto;
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: block;
+}
+
+.section {
+    display: block;
+}
+
+.padding-global {
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1392px; /* контейнер ограничен */
+    margin: auto auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Margins */
+
+.margin-bottom-24 {
+    margin-bottom: 1.5rem;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 2.5rem;
+}
+
+/*********************************************/
+/************** Adaptives ********************/
+/*********************************************/
+
+/************** 1920px ***********************/
+
+@media (max-width: 1920px) {
+
+    .padding-global {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/************** 1440px ***********************/
+
+@media (max-width: 1440px) {
+
+    .padding-global {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/************** 375px ************************/
+
+@media (max-width: 375px) {
+
+    .padding-global {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

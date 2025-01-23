@@ -1,0 +1,229 @@
+/************** Typography **************/
+
+h1 {
+    margin: 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    margin: 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h3 {
+    margin: 0 0;
+}
+
+p {
+    margin: 0 0;
+    font-size: 1rem ;
+    line-height: 1.5;
+}
+
+.heading-style-h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.text-style-p-18 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+/************** Buttons **************/
+
+.button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 100vw;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    background-color: none;
+}
+
+/* Button White */
+
+.button_white {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
+
+.button_white:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+    position: relative;
+    top: -3px;
+}
+
+/* Button Blue */
+
+.button_blue {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.button_blue:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+    position: relative;
+    top: -3px;
+}
+
+
+/************** Icons **************/
+
+.icon-embed-64 {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.icon-embed-24 {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.icon-embed-32 {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+/************** Other **************/
+
+.section-heading {
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Параграф */
+.section-heading p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 140%;
+    text-align: center;
+    color: var(--color-text-grey)
+}
+
+/*********************************************/
+/************** Adaptives ********************/
+/*********************************************/
+
+@media (max-width: 991px) {
+    .section-heading p {
+        text-align: start;
+    }
+}
+
+@media (max-width: 375px) {
+
+    h1 {
+        margin: 0 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        margin: 0 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
+
+    h3 {
+        margin: 0 0;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 0 0;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .heading-style-h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .text-style-p-18 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.4;
+    }
+
+    /************** Buttons **************/
+
+    .button {
+        padding: 0.75rem 0;
+        width: 100%;
+    }
+
+    /************** Icons **************/
+
+    .icon-embed-64 {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /************** Other **************/
+
+    .section-heading {
+        margin-bottom: 2rem;
+        align-items: flex-start;
+    }
+
+    /* Параграф */
+    .section-heading p {
+        text-align: start;
+    }
+
+}

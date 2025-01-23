@@ -1,0 +1,231 @@
+/*********************************************/
+/************** Section Econom ***************/
+/*********************************************/
+.section_econom {
+	display: block;
+	padding-top: 7.5rem;
+	padding-bottom: 7.5rem;
+	background: var(--color-blue);
+}
+
+.econom__component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.econom__head-wrapper {
+	margin-bottom: 4rem;
+	max-width: 72.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: var(--color-white);
+}
+
+/* Начало слайдера */
+
+.econom__slider {
+	position: relative;
+	width: 100%;
+	max-width: 72.25rem;
+	height: 40rem;
+	border-radius: .75rem;
+	overflow: hidden;
+	margin: 0 auto 4rem auto;
+}
+
+.econom__slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.econom__slide.is-1 {
+	z-index: 1;
+}
+
+.econom__slide.is-2 {
+	z-index: 2;
+}
+
+.econom__slider-toogle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	width: 6.5rem;
+	cursor: grab;
+	z-index: 3;
+}
+
+.slider-toogle {
+	position: relative;
+	z-index: 10;
+	width: 6.5rem;
+	height: 6.5rem;
+}
+
+.is-before {
+	z-index: 2;
+	clip-path: inset(0 50% 0 0);
+	transition: clip-path 0.00001s;
+}
+
+.is-after {
+	z-index: 1;
+}
+
+.slider-toogle-line {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 100%;
+	background:var(--color-blue);
+}
+
+/* Конец слайдера */
+
+.econom__grid {
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	grid-auto-flow: column;
+	column-gap: 1.5rem;
+	row-gap: 1.5rem;
+	justify-content: center;
+}
+
+.econom-card__heading {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	color: var(--color-white)
+}
+
+.econom-card {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--color-text-op-80);
+}
+
+/*********************************************/
+/************** Adaptives ********************/
+/*********************************************/
+
+/************** 1440px ***********************/
+@media (max-width: 1440px) {
+
+	.econom__slider {
+		width: 100%;
+		max-width: 72.25rem;
+		height: 40rem;
+	}
+}
+
+
+/************** 1280px ***********************/
+@media (max-width: 1280px) {
+
+	.econom__slider {
+		width: 90vw;
+		max-width: 100%;
+		height: 51vw;
+	}
+
+	.econom__head-wrapper {
+		max-width: 56rem;
+	}
+}
+
+/************** 991px ************************/
+@media (max-width: 991px) {
+
+	.econom__slider {
+		width: 90vw;
+		max-width: 100%;
+		height: 51vw;
+	}
+
+	.econom__component {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.econom__head-wrapper {
+		max-width: 33rem;
+		text-align: start;
+		align-items: flex-start;
+	}
+}
+
+/************** 767px ************************/
+@media (max-width: 767px) {
+	.econom__grid {
+		display: grid;
+		grid-template-rows: repeat(5, auto);
+		grid-auto-flow: row;
+		column-gap: 0rem;
+		row-gap: 1.5rem;
+		justify-content: left;
+	}
+}
+
+/************** 375px ************************/
+@media (max-width: 375px) {
+
+	.section_econom {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		background: var(--color-blue);
+	}
+
+	.econom__component {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.econom__head-wrapper {
+		margin-bottom: 3rem;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: left;
+		color: var(--color-white);
+	}
+
+	.econom__slider {
+		width: 100%;
+		height: 11.375rem;
+		border-radius: .75rem;
+		overflow: hidden;
+		margin: 0 auto 4rem auto;
+	}
+
+	.econom-card__heading {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 1.2;
+		color: var(--color-white)
+	}
+
+	.econom-card {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: var(--color-text-op-80);
+	}
+
+}

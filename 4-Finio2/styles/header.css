@@ -1,0 +1,122 @@
+header {
+    max-width: 1920px;
+    background-color: var(--color-blue);
+    width: 100%;
+    padding: 2.5rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header__component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__brand-link {
+    display: block;
+    color: var(--color-white);
+    width: 6.0625rem;
+    height: 3.125rem;
+    cursor: pointer;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.header__brand-link:hover {
+    color: var(--color-black);
+}
+
+.header__menu {
+    display: block;
+}
+
+.header__menu-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.header__list-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 140%;
+}
+
+.header__list-item a {
+    color: var(--color-text-op-80);
+}
+
+.header__list-item:hover a {
+    color: var(--color-white);
+}
+
+.menu-button {
+    display: none;
+}
+
+/*********************************************/
+/************** Adaptives ********************/
+/*********************************************/
+
+/************** 991px ************************/
+
+@media (max-width: 991px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__component>.button.button_white {
+        display: none;
+    }
+
+    .menu-button {
+        padding: 0;
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: var(--color-blue);
+        color: var(--color-white);
+        border: none;
+    }
+}
+
+/************** 375px ************************/
+
+@media (max-width: 375px) {
+
+    header {
+        padding: 1.5rem 0;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__component>.button.button_white {
+        display: none;
+    }
+
+    .menu-button {
+        padding: 0;
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: var(--color-blue);
+        color: var(--color-white);
+        border: none;
+    }
+
+    .header__brand-link {
+        width: 4.0625rem;
+        height: 2.125rem;
+    }
+
+}

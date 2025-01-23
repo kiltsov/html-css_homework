@@ -1,0 +1,289 @@
+/*********************************************/
+/************** Section Features *************/
+/*********************************************/
+.section_feature {
+	display: block;
+}
+
+.feature__component {
+	display: block;
+}
+
+.feature__grid {
+	padding: 5rem 0 5rem 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	gap: 4rem;
+	border-top: 1px solid var(--color-border-feature);
+}
+
+.feature__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.feature__image {
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+
+.text-style-body-feature {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 1.4;
+	color: var(--color-text-grey);
+}
+
+.feature__content.is-1 {
+	margin-left: auto;
+	max-width: 33rem;
+}
+
+.feature__content.is-2 {
+	margin-right: auto;
+	max-width: 33rem;
+}
+
+.feature__content.is-3 {
+	margin-left: auto;
+	max-width: 33rem;
+}
+
+.feature__content.is-4 {
+	margin-right: auto;
+	max-width: 303rem;
+}
+
+.feature__image.is-1 {
+	width: 45.5625rem;
+	height: 27.875rem;
+}
+
+.feature__image.is-2 {
+	width: 40.25rem;
+	height: 27.75rem;
+}
+
+.feature__image.is-3 {
+	width: 40.0625rem;
+	height: 26rem;
+}
+
+.feature__image.is-4 {
+	width: 40.25rem;
+	height: 23.25rem;
+}
+
+
+/*********************************************/
+/************** Adaptives ********************/
+/*********************************************/
+
+/************** 1440px ***********************/
+@media (max-width: 1440px) {
+	.feature__grid {
+		padding: 3rem 0 3rem 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: space-between;
+		gap: 2rem;
+		border-top: 1px solid var(--color-border-feature);
+		justify-items: center;
+	}
+
+	.feature__content.is-1 {
+		margin-left: 0;
+		max-width: 45rem;
+		text-align: center;
+		order: 2;
+	}
+	
+	.feature__content.is-2 {
+		margin-right: 0;
+		max-width: 45rem;
+		text-align: center;
+		order: 2;
+	}
+	
+	.feature__content.is-3 {
+		margin-left: 0;
+		max-width: 45rem;
+		text-align: center;
+		order: 2;
+	}
+	
+	.feature__content.is-4 {
+		margin-right: 0;
+		max-width: 45rem;
+		text-align: center;
+		order: 2;
+	}
+
+	.feature__image.is-1 {
+		width: 45.5625rem;
+		height: 27.875rem;
+	}
+	
+	.feature__image.is-2 {
+		width: 40.25rem;
+		height: 27.75rem;
+	}
+	
+	.feature__image.is-3 {
+		width: 40.0625rem;
+		height: 26rem;
+	}
+	
+	.feature__image.is-4 {
+		width: 40.25rem;
+		height: 23.25rem;
+	}
+
+}
+
+/************** 1280px ***********************/
+@media (max-width: 1280px) {
+
+
+}
+
+/************** 991px ************************/
+@media (max-width: 991px) {
+
+	.feature__content.is-1 {
+		margin-left: 0;
+		margin-right: auto;
+		max-width: 33rem;
+		text-align: start;
+		order: 2;
+	}
+		
+	.feature__content.is-2 {
+		margin-left: 0;
+		margin-right: auto;
+		max-width: 42rem;
+		text-align: start;
+		order: 2;
+	}
+		
+	.feature__content.is-3 {
+		margin-left: 0;
+		margin-right: auto;
+		max-width: 42rem;
+		text-align: start;
+		order: 2;
+	}
+		
+	.feature__content.is-4 {
+		margin-left: 0;
+		margin-right: auto;
+		max-width: 42rem;
+		text-align: start;
+		order: 2;
+	}
+
+	.feature__image.is-1 {
+		width: 100%;
+		height: auto;
+	}
+		
+	.feature__image.is-2 {
+		width: 100%;
+		height: auto;
+	}
+		
+	.feature__image.is-3 {
+		width: 100%;
+		height: auto;
+	}
+		
+	.feature__image.is-4 {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+
+@media (max-width: 375px) {
+
+.feature__grid {
+	padding: 3rem 0 3rem 0;
+	display: grid;
+	grid-template-columns: 100%;
+	justify-content: space-between;
+	gap: 2rem;
+	border-top: 1px solid var(--color-border-feature);
+}
+
+.feature__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.feature__image {
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+
+.text-style-body-feature {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 1.4;
+	color: var(--color-text-grey);
+}
+
+.feature__content.is-1 {
+	max-width: 100%;
+	order: 2;
+}
+
+.feature__content.is-2 {
+	max-width: 100%;
+	order: 2;
+}
+
+.feature__content.is-3 {
+	max-width: 100%;
+	order: 2;
+}
+
+.feature__content.is-4 {
+	max-width: 100%;
+	order: 2;
+}
+
+.feature__image.is-1 {
+	width: 100%;
+	height: 13.625rem;
+	order: 1;
+}
+
+.feature__image.is-2 {
+	width: 100%;
+	height: 14.125rem;
+	order: 1;
+}
+
+.feature__image.is-3 {
+	width: 100%;
+	height: 13.3125rem;
+	order: 1;
+}
+
+.feature__image.is-4 {
+	width: 100%;
+	height: 11.875rem;
+	order: 1;
+}
+
+}
